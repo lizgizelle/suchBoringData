@@ -1,0 +1,381 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerTop {
+	max-width: 100%;
+    background-color: black;
+}
+
+.main-header .containerTop {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+    .main-header {
+       font-size: 32px;
+    }
+  }
+
+@media screen and (max-width: 700px) {
+    .main-header {
+       font-size: 32px;
+    }
+  }
+
+.main-nav ul {
+	margin: 1em 0 .5em;
+	text-align: center;
+    font-family: john-doe, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(192,192,192);
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+.main-nav li {
+	display: inline;
+    font-family: john-doe, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(192,192,192);
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+.main-nav a {
+	display: inline-block;
+	padding: .5em 1.5em;
+    font-family: john-doe, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(192,192,192);
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+
+body {
+    background: black;
+}
+
+.topContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.boxOne {
+    width: 50%;
+    height: 560px;
+    margin-top: 160px;
+}
+
+.boxOne .title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 148px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: rgb(192,192,192);
+    font-size: 24px;
+    font-family: john-doe, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.boxOne .text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: rgb(192,192,192);
+    font-size: 18px;
+    font-family: john-doe, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.boxOne:nth-child(1n) {
+    /* background-color: blanchedalmond; */
+    align-items: baseline;
+    text-align: center;
+    flex-direction: row;
+    color: black;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.brainThree {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.TwelveBoxesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.box {
+    width: 440px;
+    height: 100px;
+    padding-top: 260px;     
+    margin-bottom: 20px;
+}
+
+.box:nth-child(1n) {
+    background-image: url('/static/images/ADI.png');
+    cursor: pointer;
+
+}
+.box:nth-child(1n):hover {
+    background-color: powderblue;
+    cursor: pointer;
+}
+.box:nth-child(2n) {
+    background-image: url('/static/images/AMZN.png');
+    cursor: pointer;
+}
+.box:nth-child(2n):hover {
+    background-color: pink;
+    cursor: pointer;
+}
+.box:nth-child(3n) {
+    background-image: url('/static/images/GOOGL.png');
+    cursor: pointer;
+}
+.box:nth-child(3n):hover {
+    background-color: powderblue;
+    cursor: pointer;
+}
+.box:nth-child(4n) {
+    background-image: url('/static/images/APPL.png');
+    cursor: pointer;
+}
+.box:nth-child(4n):hover {
+    background-color: pink;
+    cursor: pointer;
+}
+.box:nth-child(5n) {
+    background-image: url('/static/images/FB.png');
+    cursor: pointer;
+}
+.box:nth-child(5n):hover {
+    background-color: powderblue;
+    cursor: pointer;
+}
+.box:nth-child(6n) {
+    background-image: url('/static/images/PFE.png');
+    cursor: pointer;
+}
+.box:nth-child(6n):hover {
+    background-color: pink;
+    cursor: pointer;
+}
+.box:nth-child(7n) {
+    background-image: url('/static/images/TSLA.png');
+    cursor: pointer;
+}
+.box:nth-child(7n):hover {
+    background-color: powderblue;
+    cursor: pointer;
+}
+.box:nth-child(8n) {
+    background-image: url('/static/images/NFLX.png');
+    cursor: pointer;
+}
+.box:nth-child(8n):hover {
+    background-color: pink;
+    cursor: pointer;
+}
+.box:nth-child(9n) {
+    background-image: url('/static/images/XOM.png');
+    cursor: pointer;
+}
+.box:nth-child(9n):hover {
+    background-color: powderblue;
+    cursor: pointer;
+}
+.box:nth-child(10n) {
+    background-image: url('/static/images/PYPL.png');
+    cursor: pointer;
+}
+.box:nth-child(10n):hover {
+    background-color: pink;
+    cursor: pointer;
+}
+.box:nth-child(11n) {
+    background-image: url('/static/images/SBUX.png');
+    cursor: pointer;
+}
+.box:nth-child(11n):hover {
+    background-color: powderblue;
+    cursor: pointer;
+}
+.box:nth-child(12n) {
+    background-image: url('/static/images/ACN.png');
+    cursor: pointer;
+}
+.box:nth-child(12n):hover {
+    background-color: pink;
+    cursor: pointer;
+}
+
+.subpageHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(192,192,192);
+    font-size: 30px;
+    font-family: john-doe, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.graphs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* padding: 1em; */
+}
+
+.graphs .image-container {
+    max-width: 95vw;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.sDescr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 36px;
+    padding-right: 36px;
+    color: rgb(192,192,192);
+    font-family: ff-scala-sans-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1000px) {
+    .sDescr {
+       font-size: 32px;
+    }
+  }
+
+@media screen and (max-width: 700px) {
+    .sDescr {
+       font-size: 32px;
+    }
+  }
+
+.footerBar {
+    max-width: 100%;
+    background-color: black;
+    max-height: 100%;
+    margin-top: auto;
+}
+
+.footerBar .footerItem {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+    margin-top: 36px;
+    margin-bottom: 20px;
+    color: rgb(192,192,192);
+    font-size: 12px;
+    font-family: john-doe, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 40px;
+    color: rgb(192,192,192);
+    font-family: ff-scala-sans-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutContainer {
+       font-size: 36px;
+    }
+  }
+
+@media screen and (max-width: 700px) {
+    .aboutContainer {
+       font-size: 26px;
+    }
+  }
+
+.aboutContainer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 480px;
+    color: rgb(192,192,192);
+    font-size: 16px;
+    font-family: john-doe, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutContainer1 {
+       font-size: 36px;
+       padding-top: 320px;
+       justify-content: center;
+       text-align: center;
+       align-content: center;
+    }
+  }
+
+@media screen and (max-width: 700px) {
+    .aboutContainer1 {
+       font-size: 26px;
+       padding-top: 320px;
+       justify-content: center;
+       text-align: center;
+       align-content: center;
+    }
+  }
+

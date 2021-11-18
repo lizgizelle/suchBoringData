@@ -1,0 +1,13 @@
+<!doctype ht1>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'js/function.js') }}">
+        {% block head%}{% endblock %}
+    </head>
+    <body>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'js/function.js') }}">
+        {% block body %}{% endblock %}
+    </body>
+</html>

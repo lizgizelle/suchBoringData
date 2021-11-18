@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<header class="main-header">
+	<div class="containerTop">
+		<h1 class="mh-logo">
+			<a href="/"><img src="/static/images/Logo_1.png" width="170" height="120" alt="Flexbox.ninja">
+		</h1>
+		<nav class="main-nav">
+			<ul class="main-nav-list">
+				<li>
+					<a href="/about">About</a>
+				</li>
+				<li>
+					<a href="/contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="subpageHeading">
+    <p>Sentimental Analysis on {{ticker}}</p>
+</div>
+
+<div class="graphs"> 
+    <div class="image-container">
+        <img src="data:image/png;base64, {{ graph1 }}"/>
+    </div>
+</div>
+
+<div class="sDescr">
+    <p>
+        What is Subjectivity? A Subjective sentence expresses some personal feelings, views, or beliefs. An example: subjective sentence is “I like apples.” Subjective expressions come in many forms, e.g., opinions, allegations, desires, beliefs, suspicions, and speculations.
+    </p>
+
+    <p>
+        A subjective sentence may not express any sentiment. For example, “I think that he went home” and “I want a camera that can take good photos” are a subjective sentences, but does not express any sentiment. The subjectivity score is graded from 0 to 1.
+    </p>
+
+    <p>
+        (Source: Bing Liu. Sentiment Analysis and Opinion Mining, Morgan & Claypool Publishers, May 2012) </div>
+    </p>
+    
+</div>
+
+<div class="graphs"> 
+    <div class="image-container">
+        <img src="data:image/png;base64, {{ graph2 }}"/>
+    </div>
+</div>
+
+<div class="sDescr">
+    <p>
+        What is Polarity? Polarity It simply means emotions expressed in a sentence. Emotions are closely related to sentiments. The strength of a sentiment or opinion is typically linked to the intensity of certain emotions, e.g., joy and anger.
+    </p>
+    <p>
+        Opinions in sentiment analysis are mostly evaluations(although not always). According to consumer behavior research, evaluations can be broadly categorized into two types: 1. Rational evaluations, 2. Emotional evaluations. Rational evaluation: Such evaluations are from rational reasoning, tangible beliefs, and utilitarian attitudes. For example, the following sentences express rational evaluations: “The voice of this phone is clear,” “This car is worth the price,” and “I am happy with this car.”    
+    </p>
+    <p>
+        Emotional evaluation: Such evaluations are from non-tangible and emotional responses to entities which go deep into people’s state of mind.    
+    </p>
+
+    <p>
+        For example, the following sentences express emotional evaluations: “I like the color purple,” “I am so angry with their service people” and “This is the best car ever built.”
+    </p>
+
+    <p>
+        To make use of these two types of evaluations in practice, we can design 5 sentiment ratings, emotional negative (-2), rational negative (-1), neutral (0), rational positive (+1), and emotional positive (+2). In practice, neutral often means no opinion or sentiment expressed.
+    </p>    
+</div>
+
+<div class="graphs"> 
+    <div class="image-container">
+        <img src="data:image/png;base64, {{ graph3 }}"/>
+    </div>
+</div>
+
+<div class="graphs"> 
+    <div class="image-container">
+        <img src="data:image/png;base64, {{ graph }}"/>
+    </div>
+</div>
+
+<footer class="footerBar">
+	<div class="footerItem">© 2021. All Rights Reserved to Elizabeth Lim</div>
+</footer>
+
+<link rel="stylesheet" href="https://use.typekit.net/gct8mal.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+
+{% endblock %}
+

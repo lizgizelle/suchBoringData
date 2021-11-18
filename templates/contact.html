@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<header class="main-header">
+	<div class="containerTop">
+		<h1 class="mh-logo">
+			<a href="/"><img src="/static/images/Logo_1.png" width="170" height="120" alt="Flexbox.ninja">
+		</h1>
+		<nav class="main-nav">
+			<ul class="main-nav-list">
+				<li>
+					<a href="/about">About</a>
+				</li>
+				<li>
+					<a href="/contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="aboutContainer1">
+    <p class="text">
+		Elizabeth Lim
+    </p>
+    <p class="text">
+		Email: Elizabethlim.ilj@gmail.com
+    </p>
+    <p class="text">
+		<a href="https://www.linkedin.com/in/elizabeth-lim-66010864/" style="color:white;">Linkedin</a>
+    </p>
+</div>
+
+<footer class="footerBar">
+	<div class="footerItem">© 2021. All Rights Reserved to Elizabeth Lim</div>
+</footer>
+
+<link rel="stylesheet" href="https://use.typekit.net/gct8mal.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+
+{% endblock %}
+
